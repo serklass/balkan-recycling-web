@@ -3,123 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALKAN RECYCLING DOO NOVI SAD | Professional Equipment & Service</title>
+    <title>BALKAN RECYCLING DOO | Professional Equipment & Robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --primary: #2e7d32;
-            --dark: #1b1b1b;
-            --light: #f8f9fa;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        header {
-            border-bottom: 2px solid var(--primary);
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            text-align: center;
-        }
-        h1 { margin: 0; color: var(--primary); letter-spacing: 1px; }
-        .status-badge {
-            display: inline-block;
-            background: #e8f5e9;
-            color: #2e7d32;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-top: 10px;
-            text-transform: uppercase;
-        }
-        .section { margin-bottom: 30px; }
-        h2 { font-size: 1.2rem; color: var(--dark); border-left: 4px solid var(--primary); padding-left: 15px; }
-        .contacts {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            background: #f1f3f5;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-        }
-        .footer-info {
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: #666;
-            text-align: center;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        a { color: var(--primary); text-decoration: none; font-weight: bold; }
-        @media (max-width: 600px) {
-            .contacts { grid-template-columns: 1fr; }
-        }
+        .lang-sr { display: none; }
+        .active-sr .lang-en { display: none; }
+        .active-sr .lang-sr { display: block; }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<div class="container">
-    <header>
-        <h1>  DOO NOVI SAD</h1>
-        <div class="status-badge">Official Website Under Construction</div>
-    </header>
-
-    <div class="section">
-        <h2>About Our Company</h2>
-        <p>
-            <strong>BALKAN RECYCLING DOO</strong> is a specialized provider of industrial and municipal solutions based in Novi Sad, Serbia. 
-            We focus on the sales and technical maintenance of professional equipment for:
-        </p>
-        <ul>
-            <li>Large-scale grass mowing and landscape management;</li>
-            <li>Wood chipping and forestry waste processing;</li>
-            <li>Waste recycling and environmental technologies.</li>
-        </ul>
-        <p>
-            We pride ourselves on our <strong>in-house service center</strong>, ensuring long-term reliability and professional warranty support for all machinery we supply. 
-            Our mission is to bring smart, autonomous, and eco-friendly technologies to the Balkan market.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Contact Information</h2>
-        <div class="contacts">
-            <div>
-                <strong>Phone:</strong><br>
-                <a href="tel:+381652642469">+381 65 264 2469</a>
-            </div>
-            <div>
-                <strong>Email:</strong><br>
-                <a href="mailto:fintechns@gmail.com">fintechns@gmail.com</a>
-            </div>
-            <div style="grid-column: 1 / -1;">
-                <strong>Address:</strong><br>
-                GAJEVA 3А, sprat: 1, 21000, Novi Sad, Srbija
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-bold text-xl text-green-700">BALKAN RECYCLING</div>
+            <div class="flex space-x-4">
+                <button onclick="setLang('en')" class="hover:text-green-700 font-medium">EN</button>
+                <span class="text-gray-300">|</span>
+                <button onclick="setLang('sr')" class="hover:text-green-700 font-medium">SRB</button>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="footer-info">
-        <p>
-            <strong>Legal Details:</strong><br>
-            PIB: 114791985 | MB: 22070835
+    <header class="bg-green-800 py-20 text-white text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            <span class="lang-en">Advanced Solutions for a Greener Future</span>
+            <span class="lang-sr">Napredna rešenja za zeleniju budućnost</span>
+        </h1>
+        <p class="text-xl opacity-90 max-w-2xl mx-auto">
+            <span class="lang-en">Professional machinery, waste recycling, and autonomous robotic systems in the Balkan region.</span>
+            <span class="lang-sr">Profesionalne mašine, reciklaža otpada i autonomni robotski sistemi u regionu Balkana.</span>
         </p>
-        <p>&copy; 2026 BALKAN RECYCLING DOO. All rights reserved.</p>
-    </div>
-</div>
+    </header>
 
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-green-800">
+                    <span class="lang-en">Expertise & Service</span>
+                    <span class="lang-sr">Stručnost i Servis</span>
+                </h2>
+                <p class="text-lg mb-4">
+                    <span class="lang-en">Based in <strong>Novi Sad</strong>, Balkan Recycling DOO is more than just a dealer. We operate a full-cycle service center and technical support hub.</span>
+                    <span class="lang-sr">Sa sedištem u <strong>Novom Sadu</strong>, Balkan Recycling DOO je više od običnog distributera. Upravljamo servisnim centrom sa punim ciklusom i centrom za tehničku podršku.</span>
+                </p>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-600">
+                    <p class="italic">
+                        <span class="lang-en text-sm">"Our focus is the integration of smart technologies like autonomous mowers into the Serbian municipal and private sectors."</span>
+                        <span class="lang-sr text-sm">"Naš fokus je integracija pametnih tehnologija, kao što su autonomne kosačice, u srpski komunalni i privatni sektor."</span>
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-100 p-8 rounded-lg text-center font-bold">RECYCLING</div>
+                <div class="bg-green-700 p-8 rounded-lg text-center font-bold text-white uppercase tracking-wider">Robotics</div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center font-bold text-white">SERVICE</div>
+                <div class="bg-green-100 p-8 rounded-lg text-center font-bold uppercase tracking-wider">Eco Tech</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">
+                <span class="lang-en">Strategic Partnership Opportunities</span>
+                <span class="lang-sr">Mogućnosti strateškog partnerstva</span>
+            </h2>
+            <p class="mb-8">
+                <span class="lang-en">We are actively seeking official dealership and distribution rights for innovative robotic lawn mowers and automated landscaping solutions. We offer local market expertise and reliable service infrastructure.</span>
+                <span class="lang-sr">Aktivno tražimo zvanično zastupništvo i prava distribucije za inovativne robotske kosačice i automatizovana rešenja za uređenje pejzaža. Nudimo stručnost na lokalnom tržištu i pouzdanu servisnu infrastrukturu.</span>
+            </p>
+            <a href="mailto:fintechns@gmail.com" class="bg-green-700 text-white px-8 py-3 rounded-full font-bold hover:bg-green-800 transition">
+                <span class="lang-en">Inquire for Partnership</span>
+                <span class="lang-sr">Pošaljite upit za partnerstvo</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t py-12">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <h4 class="font-bold mb-4 uppercase">BALKAN RECYCLING DOO</h4>
+                <p>GAJEVA 3А, sprat: 1, 21000<br>Novi Sad, Srbija</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase">Contact</h4>
+                <p>Tel: +381 65 264 2469<br>Email: fintechns@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase">Company Info</h4>
+                <p>PIB: 114791985<br>MB: 22070835</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            if (lang === 'sr') {
+                document.body.classList.add('active-sr');
+            } else {
+                document.body.classList.remove('active-sr');
+            }
+        }
+    </script>
 </body>
 </html>
